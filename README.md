@@ -1,4 +1,5 @@
 # e621random
 
 This is a script for tampermonkey/greasemonkey/anything similar
-It makes it so the hotkey "r" will give you a random post based on your tags on posts and not just on the search screen
+It adds the "random post" button on e6 and e9 posts and not just on the search pages
+Also adds the "r" hotkey to posts
