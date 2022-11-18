@@ -3,7 +3,7 @@
 // @namespace    n/a
 // @version      0.2
 // @description  adds random post button and hotkey to image pages, not just the search pages
-// @author       reBane
+// @author       Surfluff
 // @match        https://e621.net/posts/*
 // @match        http://e621.net/posts/*
 // @match        https://e926.net/posts/*
@@ -24,7 +24,7 @@ if(current.includes("?tags=")){
 
 
  window.onkeydown= function(gfg){
-     if(document.querySelector('input') != document.activeElement){
+     if(document.activeElement.tagName != "INPUT" && document.activeElement.tagName != "TEXTAREA"){
         if(gfg.keyCode === keypress){
             if(tags){
                 window.location.href = 'https://e621.net/posts/random?tags='+tags;
